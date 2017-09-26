@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.novikovs.camera.views.CameraActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:id="@+id/btn_take_photo"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginBottom="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_btn"
+        android:src="@drawable/ic_take_photo"
+        android:text="@string/take_photo" />
+
+    <ImageButton
+        android:id="@+id/preview_history"
+        android:layout_toStartOf="@+id/btn_take_photo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20sp"
+        android:layout_marginEnd="60sp"
+        android:layout_width="80sp"
+        android:layout_height="80sp" />
+
+    <ImageButton
+        android:id="@+id/change_camera_func"
+        android:layout_toEndOf="@+id/btn_take_photo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20sp"
+        android:layout_marginStart="60sp"
+        android:layout_width="80sp"
+        android:layout_height="80sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="120sp"
+        android:id="@+id/preview"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/shutter_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="invisible" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>
